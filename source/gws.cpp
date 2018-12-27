@@ -10,18 +10,7 @@
 
 using namespace std;
 
-string spc = " ";
-string marginline = "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *";
-string title = "BESSIE" + spc;
-string version = "1.0" + spc;
-string repo = "dark-horse (c)" + spc;
-string company = "Milli (c)" + spc;
-string year = "2018" +spc;
-string langauge = "C++11" +spc;
-string author = "Takudzwa Makoni" + spc;
-string git = "https://github.com/Makoni-Milli/" + spc;
-string login = "afplay -v 0.075 ~/files/programming/cpp/dh/trinkets/login.wav";
-string cmdlist = "osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;";
+
 
 void display(string arr){
   
@@ -52,6 +41,20 @@ int gws(){
 
 int main(int argc, char **argv)
 {
+    
+    string spc = " ";
+    string marginline = "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *";
+    string title = "BESSIE" + spc;
+    string version = "1.0" + spc;
+    string repo = "dark-horse (c)" + spc;
+    string company = "Milli (c)" + spc;
+    string year = "2018" +spc;
+    string langauge = "C++11" +spc;
+    string author = "Takudzwa Makoni" + spc;
+    string git = "https://github.com/Makoni-Milli/" + spc;
+    string login = "afplay -v 0.075 ~/files/programming/cpp/dh/trinkets/login.wav";
+    string cmdlist = "osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;";
+    
     int w = gws();
     int* wptr = &w;
     //int terminalWidth;
