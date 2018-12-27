@@ -6,6 +6,7 @@
 #include <string>
 #include <iomanip>
 #include <stdlib.h>
+#define arraysize(ar)  (sizeof(ar) / sizeof(ar[0]))
 
 using namespace std;
 
@@ -19,6 +20,14 @@ string year = "2018" +spc;
 string langauge = "C++11" +spc;
 string author = "Takudzwa Makoni" + spc;
 string git = "https://github.com/Makoni-Milli/" + spc;
+string login = "afplay -v 0.075 ~/files/programming/cpp/dh/trinkets/login.wav";
+string cmdlist = "osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/ocean.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/redsands.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/grass.scpt;osascript ~/files/programming/cpp/dh/trinkets/terminal/novel.scpt;";
+
+void display(string arr){
+  
+    popen(arr.c_str(),"r");
+
+}
 
 
 void eol(int v=1){
@@ -54,8 +63,10 @@ int main(int argc, char **argv)
   
     ////////////////////////////////////
     
-    popen("afplay -v 0.075 ../trinkets/login.wav","r"); //login sound
-    popen("cd ../trinkets/terminal; osascript ocean.scpt;osascript redsands.scpt;osascript grass.scpt;osascript novel.scpt;osascript ocean.scpt;osascript redsands.scpt;osascript grass.scpt;osascript novel.scpt;","r");
+    popen(login.c_str(),"r");
+    popen(cmdlist.c_str(),"r");
+
+    
     eol(2); // padding
     pf(marginline, twref);
     eol(3);
